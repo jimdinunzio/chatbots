@@ -1,0 +1,1 @@
+python chatbot_memory.py --input-file C:\Users\jim\Desktop\Cooper\Windows\MetahumanChatbot\Saved\meeting_transcript_fixed.txt --append-to-file C:\Users\jim\Desktop\Cooper\Windows\MetahumanChatbot\Saved\chat_log.txt
