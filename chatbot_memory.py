@@ -31,7 +31,7 @@ class ChatbotMemory:
         tokens_per_chunk = tokens_count /  self._fraction
         chunk_count = math.ceil(self._fraction)
         words_per_chunk = 0.75 * tokens_per_chunk
-        chars_per_chunk = words_per_chunk * 6.2
+        chars_per_chunk = words_per_chunk * 5
         print("chunk count: ", chunk_count)
         print("tokens per chunk: ", tokens_per_chunk)
 
