@@ -18,8 +18,11 @@ class OpenAiChatbot:
         self.name2_label = name2_label
         self.log_start = 0
         self.messages = []
-        self.init_chat_log(log_path)
+        #self.init_chat_log(log_path)
+        self.messages = [{"role": "system", "content" : self.init_prompt}]
         self.log_file = open(log_path, "a")
+        self.log_file.write("\n\n---------------------New Chat---------------------\n")
+        self.log_file.write("Assistant: " + intro_line + "\n")
     
     def close(self):
         self.log_file.close()
