@@ -88,7 +88,7 @@ class OpenAiChatbot:
                         index += 1
 
                     self.messages.append({"role": role, "content": content.lstrip()})
-                    print(self.messages[-1])
+                    #print(self.messages[-1])
         else:
             self.messages = [{"role": "system", "content" : self.init_prompt}]
 
